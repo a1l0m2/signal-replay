@@ -8,7 +8,7 @@ export interface CatalystHit {
   storyId: string
   eventId: string
   headline: string
-  /** Offline deterministic blurb from title/tags/tone/filing — not an LLM. */
+  /** Offline 1–2 paragraph narrative from title/tags/tone/filing — not an LLM. */
   summary: string
   source: string
   timing: CatalystTiming

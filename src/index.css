@@ -675,12 +675,20 @@ button {
   display: inline;
 }
 
+.sr-summary-block {
+  margin: 0.35rem 0 0;
+}
+
 .sr-summary {
   margin: 0.35rem 0 0;
   color: #c5d4de;
   font-size: 0.86rem;
-  line-height: 1.45;
+  line-height: 1.5;
   font-weight: 450;
+}
+
+.sr-summary-block .sr-summary + .sr-summary {
+  margin-top: 0.45rem;
 }
 
 .sr-summary-label {
@@ -693,10 +701,19 @@ button {
   font-weight: 600;
 }
 
+.sr-news-list .sr-summary-block {
+  margin-top: 0.3rem;
+}
+
 .sr-news-list .sr-summary {
   margin-top: 0.3rem;
   color: var(--mist-dim);
   font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.sr-news-list .sr-summary-block .sr-summary + .sr-summary {
+  margin-top: 0.35rem;
 }
 
 /* Forecast toggle */

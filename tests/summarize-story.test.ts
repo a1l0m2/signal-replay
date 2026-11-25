@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Story } from '../src/data/types'
 import { catalystsForMove } from '../src/lib/catalysts'
-import { summarizeStory } from '../src/lib/summarizeStory'
+import { summarizeStory, summarizeStoryParagraphs } from '../src/lib/summarizeStory'
 import { stories as synStories } from '../src/data/synthetic'
 
 const base: Omit<Story, 'id' | 'headline' | 'body' | 'tags' | 'source' | 'kind'> = {
@@ -12,8 +12,8 @@ const base: Omit<Story, 'id' | 'headline' | 'body' | 'tags' | 'source' | 'kind'>
   narrativeRole: 'quiet',
 }
 
-describe('summarizeStory (offline deterministic)', () => {
-  it('summarizes EDGAR filings from symbol + acceptance date', () => {
+describe('summarizeStory (offline deterministic paragraphs)', () => {
+  it('summarizes EDGAR as two grounded paragraphs without inventing causes', () => {
     const s: Story = {
       ...base,
       id: 'ed',
@@ -24,14 +24,17 @@ describe('summarizeStory (offline deterministic)', () => {
       kind: 'story',
       source: 'edgar',
     }
-    const out = summarizeStory(s)
-    expect(out).toContain('AAPL')
-    expect(out).toContain('8-K')
-    expect(out).toContain('2015-10-27')
-    expect(out.toLowerCase()).toContain('material')
+    const paras = summarizeStoryParagraphs(s)
+    expect(paras).toHaveLength(2)
+    expect(paras[0]).toContain('AAPL')
+    expect(paras[0]).toMatch(/8-K/)
+    expect(paras[0]).toContain('2015-10-27')
+    expect(paras[0].toLowerCase()).toMatch(/limited|does not include/)
+    expect(paras[1].toLowerCase()).toMatch(/material-event|not inferred|causation/)
+    expect(summarizeStory(s)).toBe(paras.join('\n\n'))
   })
 
-  it('summarizes GDELT with tone lean and URL topic cue', () => {
+  it('summarizes GDELT with narrative what/why and admits thin context', () => {
     const s: Story = {
       ...base,
       id: 'g',
@@ -42,26 +45,48 @@ describe('summarizeStory (offline deterministic)', () => {
       kind: 'story',
       source: 'gdelt-gkg',
     }
-    const out = summarizeStory(s)
-    expect(out).toContain('BTC-USD')
-    expect(out).toContain('bearish')
-    expect(out).toMatch(/manoramaonline|Topic cue/i)
-    expect(out).toContain('Weak GKG')
+    const paras = summarizeStoryParagraphs(s)
+    expect(paras).toHaveLength(2)
+    expect(paras[0]).toContain('BTC-USD')
+    expect(paras[0]).toContain('bearish')
+    expect(paras[0]).toMatch(/manoramaonline|indian origin/i)
+    expect(paras[1]).toMatch(/limited|unclear|Weak GKG|not wire first-seen/i)
+    expect(paras[1].toLowerCase()).toMatch(/causation is not claimed|remains unclear/)
   })
 
-  it('uses first body sentence for synthetic wires and marks corrections', () => {
+  it('uses real body sentences for synthetic wires and marks corrections', () => {
     const early = synStories.find((s) => s.id === 's-early-v1')!
     const corr = synStories.find((s) => s.id === 's-early-v2')!
-    expect(summarizeStory(early)).toMatch(/sell-side|constructive|tentative/i)
+    const earlyParas = summarizeStoryParagraphs(early)
+    expect(earlyParas.length).toBeGreaterThanOrEqual(1)
+    expect(earlyParas.length).toBeLessThanOrEqual(2)
+    expect(earlyParas[0]).toMatch(/sell-side|constructive|tentative/i)
     expect(summarizeStory(corr).toLowerCase()).toContain('correction')
   })
 
   it('is stable / deterministic for the same story', () => {
     const s = synStories[0]!
     expect(summarizeStory(s)).toBe(summarizeStory(s))
+    expect(summarizeStoryParagraphs(s)).toEqual(summarizeStoryParagraphs(s))
   })
 
-  it('attaches summary on catalyst hits', () => {
+  it('does not invent scandal-style causes when source text is thin', () => {
+    const s: Story = {
+      ...base,
+      id: 'thin',
+      symbol: 'XOM',
+      headline: '[GDELT-GKG] XOM mention',
+      body: 'GKG bulk sample. tone=0.2. Weak clock: GKG DATE.',
+      tags: ['gdelt'],
+      kind: 'story',
+      source: 'gdelt-gkg',
+    }
+    const out = summarizeStory(s).toLowerCase()
+    expect(out).toMatch(/unclear|limited|no readable title|no gdelt tone|near-neutral/)
+    expect(out).not.toMatch(/ceo|affair|resign|bribe|lawsuit/)
+  })
+
+  it('attaches multi-paragraph summary on catalyst hits', () => {
     const r = catalystsForMove(
       {
         onsetT: 100,
@@ -84,6 +109,8 @@ describe('summarizeStory (offline deterministic)', () => {
         },
       ],
     )
-    expect(r.before[0]?.summary).toMatch(/MSFT.*8-K/i)
+    expect(r.before[0]?.summary).toMatch(/MSFT/)
+    expect(r.before[0]?.summary).toMatch(/8-K/)
+    expect(r.before[0]?.summary.split('\n\n').length).toBe(2)
   })
 })
