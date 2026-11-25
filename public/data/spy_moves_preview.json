@@ -1,0 +1,626 @@
+[
+  {
+    "onsetT": 29,
+    "endT": 42,
+    "direction": -1,
+    "peakAbsReturn": 0.08734373223744421,
+    "onsetDate": "2022-01-07",
+    "endDate": "2022-01-27"
+  },
+  {
+    "onsetT": 41,
+    "endT": 54,
+    "direction": -1,
+    "peakAbsReturn": 0.06765569319424566,
+    "onsetDate": "2022-01-26",
+    "endDate": "2022-02-14"
+  },
+  {
+    "onsetT": 55,
+    "endT": 69,
+    "direction": -1,
+    "peakAbsReturn": 0.08449572977070637,
+    "onsetDate": "2022-02-15",
+    "endDate": "2022-03-08"
+  },
+  {
+    "onsetT": 60,
+    "endT": 73,
+    "direction": -1,
+    "peakAbsReturn": 0.07824807657360254,
+    "onsetDate": "2022-02-23",
+    "endDate": "2022-03-14"
+  },
+  {
+    "onsetT": 70,
+    "endT": 84,
+    "direction": 1,
+    "peakAbsReturn": 0.08970351145423641,
+    "onsetDate": "2022-03-09",
+    "endDate": "2022-03-29"
+  },
+  {
+    "onsetT": 99,
+    "endT": 115,
+    "direction": -1,
+    "peakAbsReturn": 0.1383605762951953,
+    "onsetDate": "2022-04-20",
+    "endDate": "2022-05-12"
+  },
+  {
+    "onsetT": 108,
+    "endT": 121,
+    "direction": -1,
+    "peakAbsReturn": 0.13340304263438654,
+    "onsetDate": "2022-05-03",
+    "endDate": "2022-05-20"
+  },
+  {
+    "onsetT": 135,
+    "endT": 148,
+    "direction": -1,
+    "peakAbsReturn": 0.07174410274004407,
+    "onsetDate": "2022-06-10",
+    "endDate": "2022-06-30"
+  },
+  {
+    "onsetT": 142,
+    "endT": 157,
+    "direction": -1,
+    "peakAbsReturn": 0.09540395965485492,
+    "onsetDate": "2022-06-22",
+    "endDate": "2022-07-14"
+  },
+  {
+    "onsetT": 149,
+    "endT": 162,
+    "direction": 1,
+    "peakAbsReturn": 0.08402728608163895,
+    "onsetDate": "2022-07-01",
+    "endDate": "2022-07-21"
+  },
+  {
+    "onsetT": 165,
+    "endT": 180,
+    "direction": 1,
+    "peakAbsReturn": 0.12073427312162888,
+    "onsetDate": "2022-07-26",
+    "endDate": "2022-08-16"
+  },
+  {
+    "onsetT": 193,
+    "endT": 209,
+    "direction": -1,
+    "peakAbsReturn": 0.14988791516139435,
+    "onsetDate": "2022-09-02",
+    "endDate": "2022-09-27"
+  },
+  {
+    "onsetT": 204,
+    "endT": 220,
+    "direction": -1,
+    "peakAbsReturn": 0.09159106398491615,
+    "onsetDate": "2022-09-20",
+    "endDate": "2022-10-12"
+  },
+  {
+    "onsetT": 238,
+    "endT": 251,
+    "direction": 1,
+    "peakAbsReturn": 0.0603032272688057,
+    "onsetDate": "2022-11-07",
+    "endDate": "2022-11-25"
+  },
+  {
+    "onsetT": 280,
+    "endT": 293,
+    "direction": 1,
+    "peakAbsReturn": 0.06350045341342937,
+    "onsetDate": "2023-01-09",
+    "endDate": "2023-01-27"
+  },
+  {
+    "onsetT": 284,
+    "endT": 297,
+    "direction": 1,
+    "peakAbsReturn": 0.08337534049556286,
+    "onsetDate": "2023-01-13",
+    "endDate": "2023-02-02"
+  },
+  {
+    "onsetT": 292,
+    "endT": 306,
+    "direction": 1,
+    "peakAbsReturn": 0.04561636296560148,
+    "onsetDate": "2023-01-26",
+    "endDate": "2023-02-15"
+  },
+  {
+    "onsetT": 310,
+    "endT": 323,
+    "direction": -1,
+    "peakAbsReturn": 0.07455832835381138,
+    "onsetDate": "2023-02-22",
+    "endDate": "2023-03-13"
+  },
+  {
+    "onsetT": 330,
+    "endT": 343,
+    "direction": 1,
+    "peakAbsReturn": 0.02671307335380806,
+    "onsetDate": "2023-03-22",
+    "endDate": "2023-04-11"
+  },
+  {
+    "onsetT": 336,
+    "endT": 349,
+    "direction": 1,
+    "peakAbsReturn": 0.044681157488304396,
+    "onsetDate": "2023-03-30",
+    "endDate": "2023-04-19"
+  },
+  {
+    "onsetT": 364,
+    "endT": 377,
+    "direction": 1,
+    "peakAbsReturn": 0.03837763940470738,
+    "onsetDate": "2023-05-10",
+    "endDate": "2023-05-30"
+  },
+  {
+    "onsetT": 373,
+    "endT": 389,
+    "direction": 1,
+    "peakAbsReturn": 0.07424357554154469,
+    "onsetDate": "2023-05-23",
+    "endDate": "2023-06-15"
+  },
+  {
+    "onsetT": 385,
+    "endT": 401,
+    "direction": 1,
+    "peakAbsReturn": 0.06791672064914835,
+    "onsetDate": "2023-06-09",
+    "endDate": "2023-07-05"
+  },
+  {
+    "onsetT": 393,
+    "endT": 411,
+    "direction": 1,
+    "peakAbsReturn": 0.0650073448923246,
+    "onsetDate": "2023-06-22",
+    "endDate": "2023-07-19"
+  },
+  {
+    "onsetT": 402,
+    "endT": 416,
+    "direction": 1,
+    "peakAbsReturn": 0.04620959564068422,
+    "onsetDate": "2023-07-06",
+    "endDate": "2023-07-26"
+  },
+  {
+    "onsetT": 420,
+    "endT": 433,
+    "direction": -1,
+    "peakAbsReturn": 0.04020843862852067,
+    "onsetDate": "2023-08-01",
+    "endDate": "2023-08-18"
+  },
+  {
+    "onsetT": 451,
+    "endT": 464,
+    "direction": -1,
+    "peakAbsReturn": 0.06745626476431492,
+    "onsetDate": "2023-09-14",
+    "endDate": "2023-10-03"
+  },
+  {
+    "onsetT": 463,
+    "endT": 478,
+    "direction": -1,
+    "peakAbsReturn": 0.05364156297595913,
+    "onsetDate": "2023-10-02",
+    "endDate": "2023-10-23"
+  },
+  {
+    "onsetT": 482,
+    "endT": 501,
+    "direction": 1,
+    "peakAbsReturn": 0.053073839360670096,
+    "onsetDate": "2023-10-27",
+    "endDate": "2023-11-24"
+  },
+  {
+    "onsetT": 492,
+    "endT": 506,
+    "direction": 1,
+    "peakAbsReturn": 0.1114537599533049,
+    "onsetDate": "2023-11-10",
+    "endDate": "2023-12-01"
+  },
+  {
+    "onsetT": 499,
+    "endT": 515,
+    "direction": 1,
+    "peakAbsReturn": 0.07722721005560901,
+    "onsetDate": "2023-11-21",
+    "endDate": "2023-12-14"
+  },
+  {
+    "onsetT": 509,
+    "endT": 525,
+    "direction": 1,
+    "peakAbsReturn": 0.05037843937638587,
+    "onsetDate": "2023-12-06",
+    "endDate": "2023-12-29"
+  },
+  {
+    "onsetT": 521,
+    "endT": 535,
+    "direction": 1,
+    "peakAbsReturn": 0.035184186730784384,
+    "onsetDate": "2023-12-22",
+    "endDate": "2024-01-16"
+  },
+  {
+    "onsetT": 528,
+    "endT": 545,
+    "direction": 1,
+    "peakAbsReturn": 0.03401595498678642,
+    "onsetDate": "2024-01-04",
+    "endDate": "2024-01-30"
+  },
+  {
+    "onsetT": 539,
+    "endT": 554,
+    "direction": 1,
+    "peakAbsReturn": 0.06870787754610656,
+    "onsetDate": "2024-01-22",
+    "endDate": "2024-02-12"
+  },
+  {
+    "onsetT": 549,
+    "endT": 565,
+    "direction": 1,
+    "peakAbsReturn": 0.04923821822446527,
+    "onsetDate": "2024-02-05",
+    "endDate": "2024-02-28"
+  },
+  {
+    "onsetT": 567,
+    "endT": 586,
+    "direction": 1,
+    "peakAbsReturn": 0.0412863671184346,
+    "onsetDate": "2024-03-01",
+    "endDate": "2024-03-28"
+  },
+  {
+    "onsetT": 588,
+    "endT": 601,
+    "direction": -1,
+    "peakAbsReturn": 0.03512192482045983,
+    "onsetDate": "2024-04-02",
+    "endDate": "2024-04-19"
+  },
+  {
+    "onsetT": 606,
+    "endT": 622,
+    "direction": 1,
+    "peakAbsReturn": 0.03638586434591991,
+    "onsetDate": "2024-04-26",
+    "endDate": "2024-05-20"
+  },
+  {
+    "onsetT": 619,
+    "endT": 635,
+    "direction": 1,
+    "peakAbsReturn": 0.06634183645457471,
+    "onsetDate": "2024-05-15",
+    "endDate": "2024-06-07"
+  },
+  {
+    "onsetT": 626,
+    "endT": 643,
+    "direction": 1,
+    "peakAbsReturn": 0.05172608578159334,
+    "onsetDate": "2024-05-24",
+    "endDate": "2024-06-20"
+  },
+  {
+    "onsetT": 635,
+    "endT": 654,
+    "direction": 1,
+    "peakAbsReturn": 0.05309407504994204,
+    "onsetDate": "2024-06-07",
+    "endDate": "2024-07-08"
+  },
+  {
+    "onsetT": 647,
+    "endT": 660,
+    "direction": 1,
+    "peakAbsReturn": 0.05067288386029129,
+    "onsetDate": "2024-06-26",
+    "endDate": "2024-07-16"
+  },
+  {
+    "onsetT": 687,
+    "endT": 703,
+    "direction": 1,
+    "peakAbsReturn": 0.05741694449026606,
+    "onsetDate": "2024-08-22",
+    "endDate": "2024-09-16"
+  },
+  {
+    "onsetT": 714,
+    "endT": 729,
+    "direction": 1,
+    "peakAbsReturn": 0.037506825412592405,
+    "onsetDate": "2024-10-01",
+    "endDate": "2024-10-22"
+  },
+  {
+    "onsetT": 720,
+    "endT": 735,
+    "direction": 1,
+    "peakAbsReturn": 0.02036871893316784,
+    "onsetDate": "2024-10-09",
+    "endDate": "2024-10-30"
+  },
+  {
+    "onsetT": 730,
+    "endT": 745,
+    "direction": 1,
+    "peakAbsReturn": 0.03677596958312281,
+    "onsetDate": "2024-10-23",
+    "endDate": "2024-11-13"
+  },
+  {
+    "onsetT": 739,
+    "endT": 758,
+    "direction": 1,
+    "peakAbsReturn": 0.0342255021354921,
+    "onsetDate": "2024-11-05",
+    "endDate": "2024-12-03"
+  },
+  {
+    "onsetT": 788,
+    "endT": 801,
+    "direction": 1,
+    "peakAbsReturn": 0.03641161333843984,
+    "onsetDate": "2025-01-17",
+    "endDate": "2025-02-06"
+  },
+  {
+    "onsetT": 795,
+    "endT": 809,
+    "direction": 1,
+    "peakAbsReturn": 0.051453865840914596,
+    "onsetDate": "2025-01-29",
+    "endDate": "2025-02-19"
+  },
+  {
+    "onsetT": 801,
+    "endT": 815,
+    "direction": -1,
+    "peakAbsReturn": 0.04135174429599969,
+    "onsetDate": "2025-02-06",
+    "endDate": "2025-02-27"
+  },
+  {
+    "onsetT": 823,
+    "endT": 836,
+    "direction": -1,
+    "peakAbsReturn": 0.06712671365106075,
+    "onsetDate": "2025-03-11",
+    "endDate": "2025-03-28"
+  },
+  {
+    "onsetT": 829,
+    "endT": 843,
+    "direction": -1,
+    "peakAbsReturn": 0.16074686999124144,
+    "onsetDate": "2025-03-19",
+    "endDate": "2025-04-08"
+  },
+  {
+    "onsetT": 855,
+    "endT": 871,
+    "direction": 1,
+    "peakAbsReturn": 0.12461800857314767,
+    "onsetDate": "2025-04-25",
+    "endDate": "2025-05-19"
+  },
+  {
+    "onsetT": 869,
+    "endT": 882,
+    "direction": 1,
+    "peakAbsReturn": 0.06519085813060241,
+    "onsetDate": "2025-05-15",
+    "endDate": "2025-06-04"
+  },
+  {
+    "onsetT": 873,
+    "endT": 888,
+    "direction": 1,
+    "peakAbsReturn": 0.07317191199732354,
+    "onsetDate": "2025-05-21",
+    "endDate": "2025-06-12"
+  },
+  {
+    "onsetT": 883,
+    "endT": 900,
+    "direction": 1,
+    "peakAbsReturn": 0.05829867487598871,
+    "onsetDate": "2025-06-05",
+    "endDate": "2025-07-01"
+  },
+  {
+    "onsetT": 893,
+    "endT": 908,
+    "direction": 1,
+    "peakAbsReturn": 0.0537841096280506,
+    "onsetDate": "2025-06-20",
+    "endDate": "2025-07-14"
+  },
+  {
+    "onsetT": 899,
+    "endT": 916,
+    "direction": 1,
+    "peakAbsReturn": 0.06046305112960563,
+    "onsetDate": "2025-06-30",
+    "endDate": "2025-07-24"
+  },
+  {
+    "onsetT": 914,
+    "endT": 931,
+    "direction": 1,
+    "peakAbsReturn": 0.03881202421250662,
+    "onsetDate": "2025-07-22",
+    "endDate": "2025-08-14"
+  },
+  {
+    "onsetT": 936,
+    "endT": 953,
+    "direction": 1,
+    "peakAbsReturn": 0.044332747059913205,
+    "onsetDate": "2025-08-21",
+    "endDate": "2025-09-16"
+  },
+  {
+    "onsetT": 944,
+    "endT": 957,
+    "direction": 1,
+    "peakAbsReturn": 0.04137892389078068,
+    "onsetDate": "2025-09-03",
+    "endDate": "2025-09-22"
+  },
+  {
+    "onsetT": 950,
+    "endT": 966,
+    "direction": 1,
+    "peakAbsReturn": 0.03433854301805224,
+    "onsetDate": "2025-09-11",
+    "endDate": "2025-10-03"
+  },
+  {
+    "onsetT": 969,
+    "endT": 984,
+    "direction": 1,
+    "peakAbsReturn": 0.03899676063951134,
+    "onsetDate": "2025-10-08",
+    "endDate": "2025-10-29"
+  },
+  {
+    "onsetT": 981,
+    "endT": 994,
+    "direction": 1,
+    "peakAbsReturn": 0.04544329437263878,
+    "onsetDate": "2025-10-24",
+    "endDate": "2025-11-12"
+  },
+  {
+    "onsetT": 1001,
+    "endT": 1014,
+    "direction": 1,
+    "peakAbsReturn": 0.02676356725994216,
+    "onsetDate": "2025-11-21",
+    "endDate": "2025-12-11"
+  },
+  {
+    "onsetT": 1008,
+    "endT": 1024,
+    "direction": 1,
+    "peakAbsReturn": 0.04488111202182061,
+    "onsetDate": "2025-12-03",
+    "endDate": "2025-12-26"
+  },
+  {
+    "onsetT": 1062,
+    "endT": 1076,
+    "direction": -1,
+    "peakAbsReturn": 0.041886244488345346,
+    "onsetDate": "2026-02-23",
+    "endDate": "2026-03-13"
+  },
+  {
+    "onsetT": 1068,
+    "endT": 1081,
+    "direction": -1,
+    "peakAbsReturn": 0.051505229743891906,
+    "onsetDate": "2026-03-03",
+    "endDate": "2026-03-20"
+  },
+  {
+    "onsetT": 1074,
+    "endT": 1087,
+    "direction": -1,
+    "peakAbsReturn": 0.09240458289853551,
+    "onsetDate": "2026-03-11",
+    "endDate": "2026-03-30"
+  },
+  {
+    "onsetT": 1085,
+    "endT": 1101,
+    "direction": 1,
+    "peakAbsReturn": 0.06408240141628933,
+    "onsetDate": "2026-03-26",
+    "endDate": "2026-04-20"
+  },
+  {
+    "onsetT": 1097,
+    "endT": 1119,
+    "direction": 1,
+    "peakAbsReturn": 0.16878832372927002,
+    "onsetDate": "2026-04-14",
+    "endDate": "2026-05-14"
+  },
+  {
+    "onsetT": 1112,
+    "endT": 1131,
+    "direction": 1,
+    "peakAbsReturn": 0.07450349375542117,
+    "onsetDate": "2026-05-05",
+    "endDate": "2026-06-02"
+  },
+  {
+    "onsetT": 1178,
+    "endT": 1193,
+    "direction": 1,
+    "peakAbsReturn": 0.04239829911128454,
+    "onsetDate": "2026-08-10",
+    "endDate": "2026-08-31"
+  },
+  {
+    "onsetT": 1191,
+    "endT": 1204,
+    "direction": -1,
+    "peakAbsReturn": 0.03111361429568759,
+    "onsetDate": "2026-08-27",
+    "endDate": "2026-09-16"
+  },
+  {
+    "onsetT": 1210,
+    "endT": 1223,
+    "direction": 1,
+    "peakAbsReturn": 0.02699980451137936,
+    "onsetDate": "2026-09-24",
+    "endDate": "2026-10-13"
+  },
+  {
+    "onsetT": 1234,
+    "endT": 1251,
+    "direction": -1,
+    "peakAbsReturn": 0.10945467381438657,
+    "onsetDate": "2026-10-28",
+    "endDate": "2026-11-20"
+  },
+  {
+    "onsetT": 1242,
+    "endT": 1253,
+    "direction": -1,
+    "peakAbsReturn": 0.06280399952160882,
+    "onsetDate": "2026-11-09",
+    "endDate": "2026-11-24"
+  }
+]

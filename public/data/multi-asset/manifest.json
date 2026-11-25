@@ -1,0 +1,372 @@
+{
+  "universe": {
+    "etf": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "DIA",
+      "XLF",
+      "XLE",
+      "XLK",
+      "GLD",
+      "USO",
+      "TLT"
+    ],
+    "stock": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "NVDA",
+      "JPM",
+      "XOM"
+    ],
+    "forex": [
+      "EURUSD=X",
+      "GBPUSD=X",
+      "USDJPY=X",
+      "USDCHF=X",
+      "AUDUSD=X",
+      "USDCAD=X"
+    ],
+    "crypto": [
+      "BTC-USD",
+      "ETH-USD",
+      "SOL-USD"
+    ],
+    "commodity": [
+      "GC=F",
+      "SI=F",
+      "CL=F",
+      "NG=F",
+      "HG=F"
+    ]
+  },
+  "coverage": {
+    "stock": {
+      "symbols": 8,
+      "moves": 1227,
+      "stories": 9149
+    },
+    "forex": {
+      "symbols": 6,
+      "moves": 1063,
+      "stories": 1067
+    },
+    "crypto": {
+      "symbols": 3,
+      "moves": 528,
+      "stories": 239
+    },
+    "commodity": {
+      "symbols": 5,
+      "moves": 743,
+      "stories": 1766
+    },
+    "etf": {
+      "symbols": 10,
+      "moves": 1614,
+      "stories": 118
+    }
+  },
+  "nStories": 12339,
+  "nGdelt": 9189,
+  "nEdgar": 392,
+  "gaps": [],
+  "symbols": [
+    {
+      "symbol": "SPY",
+      "file": "SPY",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 182
+    },
+    {
+      "symbol": "QQQ",
+      "file": "QQQ",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 171
+    },
+    {
+      "symbol": "IWM",
+      "file": "IWM",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 147
+    },
+    {
+      "symbol": "DIA",
+      "file": "DIA",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 170
+    },
+    {
+      "symbol": "XLF",
+      "file": "XLF",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 157
+    },
+    {
+      "symbol": "XLE",
+      "file": "XLE",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 157
+    },
+    {
+      "symbol": "XLK",
+      "file": "XLK",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 159
+    },
+    {
+      "symbol": "GLD",
+      "file": "GLD",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 151
+    },
+    {
+      "symbol": "USO",
+      "file": "USO",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 167
+    },
+    {
+      "symbol": "TLT",
+      "file": "TLT",
+      "class": "etf",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 153
+    },
+    {
+      "symbol": "AAPL",
+      "file": "AAPL",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 165
+    },
+    {
+      "symbol": "MSFT",
+      "file": "MSFT",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 151
+    },
+    {
+      "symbol": "AMZN",
+      "file": "AMZN",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 152
+    },
+    {
+      "symbol": "GOOGL",
+      "file": "GOOGL",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 166
+    },
+    {
+      "symbol": "META",
+      "file": "META",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 144
+    },
+    {
+      "symbol": "NVDA",
+      "file": "NVDA",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 150
+    },
+    {
+      "symbol": "JPM",
+      "file": "JPM",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 140
+    },
+    {
+      "symbol": "XOM",
+      "file": "XOM",
+      "class": "stock",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 159
+    },
+    {
+      "symbol": "EURUSD=X",
+      "file": "EURUSD_X",
+      "class": "forex",
+      "n": 3096,
+      "start": "2015-01-01",
+      "end": "2026-11-24",
+      "nMoves": 178
+    },
+    {
+      "symbol": "GBPUSD=X",
+      "file": "GBPUSD_X",
+      "class": "forex",
+      "n": 3096,
+      "start": "2015-01-01",
+      "end": "2026-11-24",
+      "nMoves": 161
+    },
+    {
+      "symbol": "USDJPY=X",
+      "file": "USDJPY_X",
+      "class": "forex",
+      "n": 3096,
+      "start": "2015-01-01",
+      "end": "2026-11-24",
+      "nMoves": 181
+    },
+    {
+      "symbol": "USDCHF=X",
+      "file": "USDCHF_X",
+      "class": "forex",
+      "n": 3096,
+      "start": "2015-01-01",
+      "end": "2026-11-24",
+      "nMoves": 181
+    },
+    {
+      "symbol": "AUDUSD=X",
+      "file": "AUDUSD_X",
+      "class": "forex",
+      "n": 3096,
+      "start": "2015-01-01",
+      "end": "2026-11-24",
+      "nMoves": 165
+    },
+    {
+      "symbol": "USDCAD=X",
+      "file": "USDCAD_X",
+      "class": "forex",
+      "n": 3096,
+      "start": "2015-01-01",
+      "end": "2026-11-24",
+      "nMoves": 197
+    },
+    {
+      "symbol": "BTC-USD",
+      "file": "BTC-USD",
+      "class": "crypto",
+      "n": 4346,
+      "start": "2015-01-01",
+      "end": "2026-11-24",
+      "nMoves": 237
+    },
+    {
+      "symbol": "ETH-USD",
+      "file": "ETH-USD",
+      "class": "crypto",
+      "n": 3303,
+      "start": "2017-11-09",
+      "end": "2026-11-24",
+      "nMoves": 161
+    },
+    {
+      "symbol": "SOL-USD",
+      "file": "SOL-USD",
+      "class": "crypto",
+      "n": 2420,
+      "start": "2020-04-10",
+      "end": "2026-11-24",
+      "nMoves": 130
+    },
+    {
+      "symbol": "GC=F",
+      "file": "GC_F",
+      "class": "commodity",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 164
+    },
+    {
+      "symbol": "SI=F",
+      "file": "SI_F",
+      "class": "commodity",
+      "n": 2991,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 150
+    },
+    {
+      "symbol": "CL=F",
+      "file": "CL_F",
+      "class": "commodity",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 169
+    },
+    {
+      "symbol": "NG=F",
+      "file": "NG_F",
+      "class": "commodity",
+      "n": 2993,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 118
+    },
+    {
+      "symbol": "HG=F",
+      "file": "HG_F",
+      "class": "commodity",
+      "n": 2992,
+      "start": "2015-01-02",
+      "end": "2026-11-24",
+      "nMoves": 142
+    }
+  ],
+  "fxCommodityEnrich": {
+    "addedMapped": 2758,
+    "source": "GDELT GKG bulk monthly(+bi-monthly) open samples",
+    "note": "Topic proxies tagged; weak GKG clock; gold/silver/FX may remain sparse"
+  }
+}

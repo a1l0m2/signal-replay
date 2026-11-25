@@ -1,0 +1,267 @@
+{
+  "symbols": [
+    {
+      "symbol": "AAPL",
+      "file": "AAPL",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 165,
+      "nStories": 286
+    },
+    {
+      "symbol": "AMZN",
+      "file": "AMZN",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 152,
+      "nStories": 180
+    },
+    {
+      "symbol": "AUDUSD=X",
+      "file": "AUDUSD_X",
+      "class": "forex",
+      "nBars": 3096,
+      "nMoves": 165,
+      "nStories": 3
+    },
+    {
+      "symbol": "BTC-USD",
+      "file": "BTC-USD",
+      "class": "crypto",
+      "nBars": 4346,
+      "nMoves": 237,
+      "nStories": 230
+    },
+    {
+      "symbol": "CL=F",
+      "file": "CL_F",
+      "class": "commodity",
+      "nBars": 2992,
+      "nMoves": 169,
+      "nStories": 1399
+    },
+    {
+      "symbol": "DIA",
+      "file": "DIA",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 170,
+      "nStories": 112
+    },
+    {
+      "symbol": "ETH-USD",
+      "file": "ETH-USD",
+      "class": "crypto",
+      "nBars": 3303,
+      "nMoves": 161,
+      "nStories": 8
+    },
+    {
+      "symbol": "EURUSD=X",
+      "file": "EURUSD_X",
+      "class": "forex",
+      "nBars": 3096,
+      "nMoves": 178,
+      "nStories": 662
+    },
+    {
+      "symbol": "GBPUSD=X",
+      "file": "GBPUSD_X",
+      "class": "forex",
+      "nBars": 3096,
+      "nMoves": 161,
+      "nStories": 331
+    },
+    {
+      "symbol": "GC=F",
+      "file": "GC_F",
+      "class": "commodity",
+      "nBars": 2992,
+      "nMoves": 164,
+      "nStories": 30
+    },
+    {
+      "symbol": "GLD",
+      "file": "GLD",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 151,
+      "nStories": 0
+    },
+    {
+      "symbol": "GOOGL",
+      "file": "GOOGL",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 166,
+      "nStories": 1464
+    },
+    {
+      "symbol": "HG=F",
+      "file": "HG_F",
+      "class": "commodity",
+      "nBars": 2992,
+      "nMoves": 142,
+      "nStories": 0
+    },
+    {
+      "symbol": "IWM",
+      "file": "IWM",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 147,
+      "nStories": 0
+    },
+    {
+      "symbol": "JPM",
+      "file": "JPM",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 140,
+      "nStories": 445
+    },
+    {
+      "symbol": "META",
+      "file": "META",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 144,
+      "nStories": 5678
+    },
+    {
+      "symbol": "MSFT",
+      "file": "MSFT",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 151,
+      "nStories": 678
+    },
+    {
+      "symbol": "NG=F",
+      "file": "NG_F",
+      "class": "commodity",
+      "nBars": 2993,
+      "nMoves": 118,
+      "nStories": 337
+    },
+    {
+      "symbol": "NVDA",
+      "file": "NVDA",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 150,
+      "nStories": 298
+    },
+    {
+      "symbol": "QQQ",
+      "file": "QQQ",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 171,
+      "nStories": 4
+    },
+    {
+      "symbol": "SI=F",
+      "file": "SI_F",
+      "class": "commodity",
+      "nBars": 2991,
+      "nMoves": 150,
+      "nStories": 0
+    },
+    {
+      "symbol": "SOL-USD",
+      "file": "SOL-USD",
+      "class": "crypto",
+      "nBars": 2420,
+      "nMoves": 130,
+      "nStories": 1
+    },
+    {
+      "symbol": "SPY",
+      "file": "SPY",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 182,
+      "nStories": 1
+    },
+    {
+      "symbol": "TLT",
+      "file": "TLT",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 153,
+      "nStories": 0
+    },
+    {
+      "symbol": "USDCAD=X",
+      "file": "USDCAD_X",
+      "class": "forex",
+      "nBars": 3096,
+      "nMoves": 197,
+      "nStories": 9
+    },
+    {
+      "symbol": "USDCHF=X",
+      "file": "USDCHF_X",
+      "class": "forex",
+      "nBars": 3096,
+      "nMoves": 181,
+      "nStories": 45
+    },
+    {
+      "symbol": "USDJPY=X",
+      "file": "USDJPY_X",
+      "class": "forex",
+      "nBars": 3096,
+      "nMoves": 181,
+      "nStories": 17
+    },
+    {
+      "symbol": "USO",
+      "file": "USO",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 167,
+      "nStories": 0
+    },
+    {
+      "symbol": "XLE",
+      "file": "XLE",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 157,
+      "nStories": 0
+    },
+    {
+      "symbol": "XLF",
+      "file": "XLF",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 157,
+      "nStories": 1
+    },
+    {
+      "symbol": "XLK",
+      "file": "XLK",
+      "class": "etf",
+      "nBars": 2992,
+      "nMoves": 159,
+      "nStories": 0
+    },
+    {
+      "symbol": "XOM",
+      "file": "XOM",
+      "class": "stock",
+      "nBars": 2992,
+      "nMoves": 159,
+      "nStories": 120
+    }
+  ],
+  "classes": [
+    "etf",
+    "stock",
+    "forex",
+    "crypto",
+    "commodity"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "nBars": 1254,
+  "nMoves": 78,
+  "splits": {
+    "train": {
+      "start": "2021-11-26",
+      "end": "2024-11-21"
+    },
+    "tune": {
+      "start": "2024-11-22",
+      "end": "2025-11-24"
+    },
+    "test": {
+      "start": "2025-11-25",
+      "end": "2026-11-24"
+    }
+  },
+  "trainN": 742,
+  "tuneN": 241,
+  "testN": 241,
+  "testPositives": 107,
+  "targetFar": 0.2,
+  "baseline": {
+    "thr": 0.6586298013876507,
+    "far": 0.20149253731343283,
+    "hits": 13,
+    "tp": 13,
+    "fp": 27
+  },
+  "newsAware": {
+    "thr": 0.7280632214100441,
+    "far": 0.20149253731343283,
+    "hits": 17,
+    "tp": 17,
+    "fp": 27
+  },
+  "tuneCalibratedTestFar": {
+    "baseline": 0.15671641791044777,
+    "newsAware": 0.34328358208955223,
+    "baselineHits": 7,
+    "newsHits": 30
+  },
+  "extraHits": 4,
+  "bootstrapExtraHits": {
+    "mean": -1.621,
+    "lo90": -17,
+    "hi90": 9
+  },
+  "verdict": "null",
+  "note": "News-aware does not improve extra large-move onset hits at matched FAR within 90% bootstrap CI (or CI includes ≤0). Honest null."
+}

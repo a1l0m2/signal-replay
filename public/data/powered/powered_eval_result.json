@@ -1,0 +1,57 @@
+{
+  "gate": {
+    "minTestOnsets": 200,
+    "testOnsets": 1395,
+    "passed": true,
+    "meaning": "N>=200 counts large-move onset episodes whose onsetDate falls in the test calendar window (not train/tune)."
+  },
+  "nSymbols": 30,
+  "nMovesTotal": 6739,
+  "splits": {
+    "train_end": "2020-02-21",
+    "tune_end": "2023-07-10",
+    "test_end": "2026-11-24"
+  },
+  "trainN": 74847,
+  "tuneN": 25200,
+  "testN": 25200,
+  "testPositives": 12114,
+  "targetFar": 0.2,
+  "featureFreeze": [
+    "rv10",
+    "vol_z20",
+    "abs_ret5",
+    "abs_ret1",
+    "n_expect",
+    "n_surprise",
+    "has_correction",
+    "recency"
+  ],
+  "baseline": {
+    "thr": 0.4962515498849664,
+    "tp": 2920,
+    "fp": 2618,
+    "tn": 10468,
+    "fn": 9194,
+    "far": 0.20006113403637474,
+    "hits": 2920
+  },
+  "newsAware": {
+    "thr": 0.5050384447656506,
+    "tp": 2649,
+    "fp": 2618,
+    "tn": 10468,
+    "fn": 9465,
+    "far": 0.20006113403637474,
+    "hits": 2649
+  },
+  "extraHits": -271,
+  "bootstrapExtraHits": {
+    "mean": -273.668,
+    "lo90": -553,
+    "hi90": -19,
+    "iters": 1000
+  },
+  "verdict": "null",
+  "note": "Honest null: news-aware does not improve extra onset hits at matched FAR within 90% bootstrap CI (includes \u22640). No feature expansion."
+}
