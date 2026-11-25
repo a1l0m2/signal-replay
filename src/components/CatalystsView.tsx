@@ -22,6 +22,20 @@ const LEAN_LABEL: Record<string, string> = {
   material_event: 'Material filing',
 }
 
+/** Prefer stored summary; split on blank lines for 1–2 paragraphs. */
+function summaryParagraphs(h: CatalystHit): string[] {
+  const raw = (h.summary ?? '').trim()
+  if (raw.includes('\n\n')) {
+    return raw.split(/\n\n+/).map((p) => p.trim()).filter(Boolean)
+  }
+  // Fallback if an older single-line summary is present without newlines.
+  if (raw.length > 0 && !raw.includes('\n')) {
+    // Still one block — UI shows it as a single paragraph.
+    return [raw]
+  }
+  return raw ? [raw] : []
+}
+
 function HitList({
   title,
   hits,
@@ -46,7 +60,13 @@ function HitList({
           <li key={h.storyId}>
             <span className="sr-conn">{LEAN_LABEL[h.lean] ?? h.lean}</span>
             <strong style={{ display: 'block', color: '#eef4f8' }}>{h.headline}</strong>
-            <p className="sr-summary">{h.summary}</p>
+            <div className="sr-summary-block">
+              {summaryParagraphs(h).map((p, i) => (
+                <p key={i} className="sr-summary">
+                  {p}
+                </p>
+              ))}
+            </div>
             <div className="sr-meta">
               <span className="sr-chip">{h.source}</span>
               <span className="sr-chip">available day {h.availableT}</span>
@@ -124,9 +144,10 @@ export function CatalystsView({
       <p className="sr-help">
         {assetClassLabel ? `${assetClassLabel}. ` : ''}
         Earnings filings, open news, and topic proxies around large moves — bullish/bearish lean when
-        the proxy allows it, otherwise unclear. FX/commodities use free GDELT GKG (+ topic proxies);
-        still may be sparse — catalyst-free moves are valid. Historical pack only (Live tape is
-        separate).
+        the proxy allows it, otherwise unclear. Each hit shows 1–2 offline paragraphs (what the
+        source says / why context is limited) — no invented causes. FX/commodities use free GDELT
+        GKG (+ topic proxies); still may be sparse — catalyst-free moves are valid. Historical pack
+        only (Live tape is separate).
       </p>
       <div className="sr-toggle" style={{ margin: '0.85rem 0', maxWidth: '28rem' }} role="group">
         <button

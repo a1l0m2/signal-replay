@@ -1,6 +1,6 @@
 import type { Story } from '../data/types'
 import { latestVersionsAsOf, versionsAsOf } from '../lib/cutoff'
-import { summarizeStory } from '../lib/summarizeStory'
+import { StorySummary } from './StorySummary'
 
 interface Props {
   stories: Story[]
@@ -20,8 +20,9 @@ export function NewsPanel({ stories, t, selectedId, onSelect }: Props) {
       <h2 id="news-heading">News known now</h2>
       <p className="sr-help">
         Only stories first available by day {t}. Published date can be earlier — that does not
-        make them knowable sooner. Click a marker on the chart or a row below. Summaries are
-        offline from title, tags, tone, and filing type — not an LLM.
+        make them knowable sooner. Click a marker on the chart or a row below. Summaries are 1–2
+        offline paragraphs from title, source text, tags, tone, and filing fields — not an LLM,
+        and not invented causes.
       </p>
 
       {visible.length === 0 ? (
@@ -37,7 +38,7 @@ export function NewsPanel({ stories, t, selectedId, onSelect }: Props) {
                     {s.headline}
                     {!isHead ? ' · older version' : ''}
                   </strong>
-                  <p className="sr-summary">{summarizeStory(s)}</p>
+                  <StorySummary story={s} />
                   <div className="sr-meta">
                     <span className="sr-chip">{s.kind}</span>
                     <span className="sr-chip">v{s.version}</span>
@@ -53,10 +54,7 @@ export function NewsPanel({ stories, t, selectedId, onSelect }: Props) {
       {selectedVisible && (
         <div className="sr-detail">
           <strong>{selectedVisible.headline}</strong>
-          <p className="sr-summary" style={{ marginTop: '0.45rem' }}>
-            <span className="sr-summary-label">Summary</span>
-            {summarizeStory(selectedVisible)}
-          </p>
+          <StorySummary story={selectedVisible} label="Summary" />
           <p className="sr-help" style={{ marginTop: '0.55rem' }}>
             Raw body (provenance):
           </p>

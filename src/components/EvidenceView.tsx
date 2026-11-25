@@ -1,6 +1,6 @@
 import type { DetectedMove, Story } from '../data/types'
 import { buildEvidence } from '../lib/evidence'
-import { summarizeStory } from '../lib/summarizeStory'
+import { StorySummary } from './StorySummary'
 
 interface Props {
   stories: Story[]
@@ -33,7 +33,8 @@ export function EvidenceView({ stories, moves, disclaimer }: Props) {
       <p className="sr-help">
         Retrospective only: was the narrative connected? Timing, conflicts, rivals, and
         commentary that may have chased the tape. “Unclear” is a valid answer. This view never
-        feeds Before/During scores.
+        feeds Before/During scores. Each story shows 1–2 offline context paragraphs from available
+        source text — not invented causes.
       </p>
       <p className="sr-help" style={{ marginTop: '0.5rem' }}>
         Moves with no identified catalyst (onset days): {shown}
@@ -48,7 +49,7 @@ export function EvidenceView({ stories, moves, disclaimer }: Props) {
               <strong style={{ display: 'block', color: '#eef4f8' }}>
                 {story?.headline ?? item.storyId}
               </strong>
-              {story && <p className="sr-summary">{summarizeStory(story)}</p>}
+              {story && <StorySummary story={story} />}
               <p className="sr-help" style={{ marginTop: '0.35rem' }}>
                 {item.note}
               </p>
